@@ -1,0 +1,51 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "test": "jasmine"
+    },
+    "devDependencies": {
+        "@vue/devtools": "^5.3.3",
+        "axios": "^0.19.2",
+        "bootstrap": "^4.5.0",
+        "cross-env": "^7.0.2",
+        "jquery": "^3.5.1",
+        "laravel-mix": "^5.0.4",
+        "lodash": "^4.17.15",
+        "popper.js": "^1.16.1",
+        "resolve-url-loader": "^3.1.1",
+        "sass": "^1.26.5",
+        "sass-loader": "8.*",
+        "vue": "^2.6.11",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "@bytegem/vue-heroicons": "^0.2.5",
+        "@riophae/vue-treeselect": "^0.4.0",
+        "@trevoreyre/autocomplete-vue": "^2.1.1",
+        "@voerro/vue-tagsinput": "^2.2.0",
+        "bufferutil": "^4.0.1",
+        "core-js": "^3.6.5",
+        "dropzone": "^5.7.0",
+        "feather-icons": "^4.28.0",
+        "jscrollpane": "^2.2.2",
+        "parsleyjs": "^2.9.2",
+        "persian-datepicker": "^1.2.0",
+        "persianjs": "^0.4.0",
+        "requirejs": "^2.3.6",
+        "simplebar": "^5.2.0",
+        "utf-8-validate": "^5.0.2",
+        "vue-cli": "^2.9.6",
+        "vue-loaders": "^4.0.0-alpha.2",
+        "vue-loading-overlay": "^3.3.2",
+        "vue-persian-datetime-picker": "^2.1.5",
+        "vue-plugin-load-script": "^1.2.0",
+        "vuelidate": "^0.7.5"
+    }
+}
